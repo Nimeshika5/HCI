@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #008970;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #008970;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #075143;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Order Confirmation</h1>
+    </div>
+    <div class="container">
+        <h2>Your Order Has Been Confirmed</h2>
+        <p>Thank you for placing your order with us. Your order has been successfully confirmed.</p>
+        <p>Please be prepared to pay cash on delivery when the items arrive at your provided address.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Redirect to the logout page or perform your logout logic here
+            window.location.href = "logout.php"; // Change to the actual logout page URL
+        }
+    </script>
+</body>
+</html>
